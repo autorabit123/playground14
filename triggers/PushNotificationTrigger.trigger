@@ -12,8 +12,8 @@ trigger PushNotificationTrigger on Property__c (after update) {
             users.add(UserInfo.getUserId());
             msg.send('DreamHouzz', users);
         } 
-        
+        //post
     }
-	*/
+    */
 
 }
