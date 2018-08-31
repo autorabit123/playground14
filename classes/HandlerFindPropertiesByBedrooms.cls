@@ -7,7 +7,7 @@ public with sharing class HandlerFindPropertiesByBedrooms implements BotHandler 
         return s.substring(0, s.length() - 1);
     }
     
-	public BotResponse handle(String utterance, String[] params, Map<String, String> session, String fileName, String fileContent) {
+    public BotResponse handle(String utterance, String[] params, Map<String, String> session, String fileName, String fileContent) {
         List<Property__c> properties = 
             [SELECT Id, Name, Beds__c, Baths__c, Price__c FROM Property__c
              WHERE City__c = :params[1] AND 
@@ -24,6 +24,7 @@ public with sharing class HandlerFindPropertiesByBedrooms implements BotHandler 
             records.add(new BotRecord(fields));
         }
         return new BotResponse(new BotMessage('Bot', 'Here is a list of ' + params[0] + ' bedrooms in ' + params[1] + ':', records));
+    //room point
     }
     
 }

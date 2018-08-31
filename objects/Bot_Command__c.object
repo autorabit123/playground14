@@ -45,7 +45,6 @@
     <deploymentStatus>Deployed</deploymentStatus>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
-    <enableChangeDataCapture>false</enableChangeDataCapture>
     <enableFeeds>false</enableFeeds>
     <enableHistory>false</enableHistory>
     <enableReports>false</enableReports>
@@ -69,6 +68,40 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Bot_Command_Picklist__c</fullName>
+        <externalId>false</externalId>
+        <label>Bot Command Picklist</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>33</fullName>
+                    <default>false</default>
+                    <label>33</label>
+                </value>
+                <value>
+                    <fullName>212</fullName>
+                    <default>false</default>
+                    <label>212</label>
+                </value>
+                <value>
+                    <fullName>445</fullName>
+                    <default>false</default>
+                    <label>445</label>
+                </value>
+                <value>
+                    <fullName>3332</fullName>
+                    <default>false</default>
+                    <label>3332</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Pattern__c</fullName>

@@ -232,6 +232,7 @@
         <members>AssetRelationship.ToDate</members>
         <members>Bot_Command__c.Active__c</members>
         <members>Bot_Command__c.Apex_Class__c</members>
+        <members>Bot_Command__c.Bot_Command_Picklist__c</members>
         <members>Bot_Command__c.Pattern__c</members>
         <members>Bot_Command__c.Sample_Utterance__c</members>
         <members>Broker__c.Email__c</members>
