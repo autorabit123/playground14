@@ -537,6 +537,7 @@
         <members>Event.Type</members>
         <members>Event.WhatId</members>
         <members>Event.WhoId</members>
+        <members>Favorite__c.Favorite_Fld__c</members>
         <members>Favorite__c.Property__c</members>
         <members>Favorite__c.User__c</members>
         <members>Idea.Categories</members>
@@ -853,6 +854,7 @@
         <members>Broker__c</members>
         <members>Command_Center</members>
         <members>Einstein_Vision</members>
+        <members>Favorite__c</members>
         <members>Heat_Map</members>
         <members>Heat_Map_Mock</members>
         <members>House_Explorer</members>
@@ -1011,6 +1013,7 @@
         <members>Contract.MyDraftContracts</members>
         <members>Contract.MyInApprovalContracts</members>
         <members>Favorite__c.All</members>
+        <members>Favorite__c.All1</members>
         <members>Idea.Ideas_Last_7_Days</members>
         <members>Lead.AllOpenLeads</members>
         <members>Lead.MyUnreadLeads</members>

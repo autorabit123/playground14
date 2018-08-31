@@ -7,7 +7,7 @@ public class HandlerFindProperties implements BotHandler {
         return s.substring(0, s.length() - 1);
     }
     
-	public BotResponse handle(String utterance, String[] params, Map<String, String> session, String fileName, String fileContent) {
+    public BotResponse handle(String utterance, String[] params, Map<String, String> session, String fileName, String fileContent) {
         if (session == null) {
             BotMessage message = new BotMessage('Bot', 'What City?');
             session = new Map<String, String>();
@@ -15,10 +15,10 @@ public class HandlerFindProperties implements BotHandler {
             session.put('step', 'city');
             return new BotResponse(message, session);
         }
-		String step = session.get('step');
+        String step = session.get('step');
         if (step == 'city') {
             session.put('city', utterance);
-			List<BotMessageButton> buttons = new List<BotMessageButton>();
+            List<BotMessageButton> buttons = new List<BotMessageButton>();
             buttons.add(new BotMessageButton('Single Family', 'Single Family'));
             buttons.add(new BotMessageButton('Condominium', 'Condominium'));
             BotMessage message = new BotMessage('Bot', 'What type of property?', buttons);
@@ -49,7 +49,7 @@ public class HandlerFindProperties implements BotHandler {
                  Price__c <= :maxPrice
                  ORDER BY Price__c
                  LIMIT 5];
-            
+            //findproperties
             List<BotRecord> records = new List<BotRecord>();
             
             for (Property__c p : properties) {
